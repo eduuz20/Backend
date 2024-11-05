@@ -1,0 +1,22 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2024-10-28 19:02:14 -03; 4 days ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1221 (dockerd)
+      Tasks: 14
+     Memory: 103.3M
+        CPU: 9.512s
+     CGroup: /system.slice/docker.service
+             └─1221 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+out 28 19:02:13 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:13.289629524-03:00" level=info msg="Starting up"
+out 28 19:02:13 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:13.296666683-03:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+out 28 19:02:13 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:13.574060296-03:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+out 28 19:02:13 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:13.648254284-03:00" level=info msg="Loading containers: start."
+out 28 19:02:14 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:14.255782751-03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+out 28 19:02:14 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:14.507863700-03:00" level=info msg="Loading containers: done."
+out 28 19:02:14 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:14.567648590-03:00" level=info msg="Docker daemon" commit=3ab5c7d containerd-snapshotter=false storage-driver=overlay2 version=27.2.0
+out 28 19:02:14 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:14.572086193-03:00" level=info msg="Daemon has completed initialization"
+out 28 19:02:14 pecege-Inspiron-7572 dockerd[1221]: time="2024-10-28T19:02:14.643418683-03:00" level=info msg="API listen on /run/docker.sock"
+out 28 19:02:14 pecege-Inspiron-7572 systemd[1]: Started Docker Application Container Engine.
